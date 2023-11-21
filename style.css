@@ -1,10 +1,11 @@
 /* Reset CSS */
-body {
+* {
     Margin: 0;
-    Padding: 0;
+    padding: 0;
     Box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /* Generics */
 
@@ -18,27 +19,81 @@ body {
 
 }
 
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 ul {
+    font: 12px bold;
     list-style-type: none;
     gap: 10px;
     padding-inline-start: 0px;
 }
 
+main {
+    padding-top: 80px;
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+}
 
 /* !Header */
 header {
     background-color: rgb(237, 114, 46);
     padding: 10px;
-    height: 60px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
 }
 
 .nav-bar>div {
     width: 100%;
-    border: 2px dashed black;
+    height: 40px;
+    /* border: 2px dashed black; */
+    gap: 10px;
+}
+
+.category {
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 40%;
 }
 
 .logo {
     background-image: url(img/boolean-logo.png);
-    background-size: 20%;
+    background-size: 15%;
     background-repeat: no-repeat;
+    background-position: center;
 }
+
+.user-utils {
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 40%;
+}
+
+.fa-regular,
+.fa-solid {
+    color: whitesmoke
+}
+
+/* todo Main */
+
+/* .section {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+section>.card {
+    border: 2px dashed black;
+    padding: 20px;
+}
+
+div.card {
+    flex-basis: calc(100% / 3);
+} */
