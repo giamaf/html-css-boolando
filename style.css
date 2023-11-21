@@ -31,13 +31,36 @@ ul {
     padding-inline-start: 0px;
 }
 
-main {
-    padding-top: 80px;
+img {
+    max-width: 100%;
 }
 
-.img {
-    max-width: 100%;
-    display: block;
+#item-firm {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.750);
+}
+
+#discounted-price {
+    color: red;
+    font-style: solid;
+}
+
+#undiscounted-price {
+    color: rgba(0, 0, 0, 0.750);
+}
+
+.discount {
+    background-color: red;
+    padding: 5px 10px;
+}
+
+.sustainability {
+    background-color: green;
+    padding: 5px 10px;
+}
+
+#false {
+    background-color: transparent;
 }
 
 /* !Header */
@@ -46,6 +69,7 @@ header {
     padding: 10px;
     width: 100%;
     position: fixed;
+    z-index: 1;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
 }
 
@@ -54,6 +78,7 @@ header {
     height: 40px;
     /* border: 2px dashed black; */
     gap: 10px;
+    padding: 0 10px;
 }
 
 .category {
@@ -80,20 +105,42 @@ header {
     color: whitesmoke
 }
 
-/* todo Main */
-
-/* .section {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+main .fa-solid {
+    background-color: white;
+    font-size: 40px;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    top: 30px;
+    right: 10px;
 }
 
-section>.card {
-    border: 2px dashed black;
-    padding: 20px;
+/* todo Main */
+main {
+    padding-top: 100px;
+}
+
+.row {
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
 }
 
 div.card {
+    /* border: 2px dashed black; */
     flex-basis: calc(100% / 3);
-} */
+    position: relative;
+    line-height: 16px;
+    padding: 20px 10px;
+}
+
+.spec {
+    color: white;
+    font-weight: 650;
+    position: relative;
+    left: 0;
+    bottom: 140px;
+    gap: 10px;
+}
